@@ -1,0 +1,55 @@
+// comandos para iniciar un proyecto nuevo con node
+
+Verificar versiones:
+
+node -v //Version node
+npm -v //version npm
+
+npm init -y //Inicializar proyecto
+
+PAQUETES QUE SE INSTALAN PARA ESTE PROYECTO
+
+npm install express // Instala express
+
+npm i mongoose dotenv cors
+
+
+npm i nodemon -D // este paquete se marca con la D para indicar que solo es de Desarrollo
+
+
+Paquete	// Para qué sirve
+Express	//Crear el servidor y las rutas de la API
+Mongoose //	Conectar y trabajar con MongoDB
+dotenv	// Leer variables desde un archivo .env
+cors	//Permitir peticiones desde otros dominios (por ejemplo React o Vue)
+nodemon	// Reinicia automáticamente el servidor cuando guardas cambios
+
+Para arrancar: /// Todavia No
+npm run dev
+
+Se cambio el package.json el type de common.js a module:
+  "type": "module",
+
+  El archivo .env no se sube al repositorio
+
+  node src/index.js // Probamos la conexion a MongoDB
+
+
+  COMANDO UTIL: REINICIAR LA TERMINAL: CONTORL + C
+
+
+  Para usar nodemon cambiamos el script por defecto:
+
+    "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  POR:
+    "scripts": {
+    "start": "nodemon src/index.js"
+  },
+
+  
+// PARA INICIALIZAR LA TERMINAL CON NODEMON:
+
+npm run start

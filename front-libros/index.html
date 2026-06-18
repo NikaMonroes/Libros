@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestión Libros</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>📚 Gestión de Libros</h1>
+      <!-- Formulario para crear un libro -->
+      <h2>Crear un libro</h2>
+      <form id="form-libro">
+        <input type="text" id="titulo" placeholder="Título" required />
+        <input type="text" id="autor" placeholder="Autor" required />
+        <input type="number" id="paginas" placeholder="Páginas" required />
+        <button type="submit">Crear libro</button>
+      </form>
+
+      <section>
+        <h2>Listado de libros</h2>
+        <ul id="lista-libros"></ul>
+        <button id="btn-listar">
+          Listar Libros
+        </button>
+      </section>
+      <section>
+        <h2>Buscar libro por id</h2>
+        <input type="text" id="buscar-id" placeholder="ID del libro" />
+        <button id="btn-buscar">Buscar</button>
+        <div id="resultado-busqueda"></div>
+      </section>
+
+      <section>
+        <h2>Actualizar libro</h2>
+
+        <input type="text" id="actualizar-id" placeholder="ID del libro" />
+
+        <input
+          type="text"
+          id="actualizar-titulo"
+          placeholder="Nuevo título"
+        />
+
+        <input
+          type="text"
+          id="actualizar-autor"
+          placeholder="Nuevo autor"
+        />
+
+        <input
+          type="number"
+          id="actualizar-paginas"
+          placeholder="Nuevas páginas"
+        />
+
+        <button id="btn-actualizar">
+          Actualizar
+        </button>
+
+        <div id="resultado-actualizacion"></div>
+      </section>
+
+    </div>
+  </body>
+  <script src="js/app.js" type="module"></script>
+</html>
