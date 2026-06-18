@@ -34,7 +34,7 @@ async function cargarLibros() {
     return;
   }
   libros.forEach((libro) => {
-    console.log(libro._id);
+    //console.log(libro._id);
     const li = document.createElement("li");
     li.innerHTML = `
             <span><strong>${libro.titulo}</strong> - ${libro.autor} - ${libro._id}</span>
